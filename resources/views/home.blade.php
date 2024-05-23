@@ -2,14 +2,14 @@
 
 @extends('layouts.app')
 
-@section('name')
+@section('content')
     <main>
-        <div class="container" style="height: 100vh" style="overflow: scroll">
-            <ul class="row gy-4 list-unstyled">
+        <div class="container py-4"  style="overflow: scroll ; height: 100vh">
+            <ul class="row gy-4 list-unstyled" >
                 @foreach ($movies as $movie)
                     
                 
-                <li class="col-3 flex-grow-1">
+                <li class="col-4 ">
                     <div class="card h-100 d-flex align-items-center">
                         <img class="w-100 h-75" src="{{$image[($movie->id)-1]}}" alt="">
                         <h4>{{$movie->title}}</h4>

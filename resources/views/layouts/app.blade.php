@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    @yield('name')
+   @include('partials.header')
+    @yield('content')
 </body>
 </html>
