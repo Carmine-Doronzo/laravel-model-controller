@@ -1,3 +1,5 @@
+
+
 @extends('layouts.app')
 
 @section('name')
@@ -9,6 +11,7 @@
                 
                 <div class="col-3">
                     <div class="card h-100 d-flex align-items-center">
+                        <img class="w-100 h-75" src="{{$image[($movie->id)-1]}}" alt="">
                         <h4>{{$movie->title}}</h4>
                         <p>{{$movie->nationality}}</p>
                         <p>{{$movie->date}}</p>
