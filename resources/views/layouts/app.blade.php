@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    
+    @yield('name')
 </body>
 </html>
